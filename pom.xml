@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <log4j2.version>2.8.2</log4j2.version>
     </properties>
 
     <dependencies>
@@ -29,6 +30,90 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Log4j2 的依赖 start -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-jcl</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <!-- Log4j2 的依赖 end -->
+
+        <!-- com.alibaba.toolkit.common 的依赖 end for use Paginator -->
+        <dependency>
+            <groupId>com.alibaba.toolkit.common</groupId>
+            <artifactId>toolkit-common-lang</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- com.alibaba.toolkit.common 的依赖 end -->
+
+        <!-- com.alipay.common 的依赖 end for use PageList -->
+        <dependency>
+            <groupId>com.alipay.common</groupId>
+            <artifactId>alipay-common-lang</artifactId>
+            <version>2.2.23</version>
+        </dependency>
+        <!-- com.alipay.common 的依赖 end -->
+
+        <!-- com.alipay.fastjson 的依赖 start -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.50</version>
+        </dependency>
+        <!-- com.alipay.fastjson 的依赖 end -->
+
+        <!-- swagger 的依赖 start -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        <!-- swagger 的依赖 end -->
+
+        <!-- lang3 的依赖 start -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <!-- lang3 的依赖 start -->
     </dependencies>
 
     <build>
